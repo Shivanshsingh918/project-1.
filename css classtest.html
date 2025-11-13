@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Float and Clear Example</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.red {
+    background: #e74c3c;
+}
+
+.blue {
+    background: #3498db;
+}
+
+.green {
+    background: #2ecc71;
+}
+
+.text {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.clear-both {
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Understanding Float and Clear in CSS</h2>
+
+<h3>Example 1: Without Clear</h3>
+<div class="container">
+    <div class="box red">Box 1</div>
+    <div class="box blue">Box 2</div>
+    <div class="box green">Box 3</div>
+    <p class="text">This paragraph appears beside the floated boxes because we have NOT used clear.</p>
+</div>
+
+<hr>
+
+<h3>Example 2: With Clear</h3>
+<div class="container">
+    <div class="box red">Box 1</div>
+    <div class="box blue">Box 2</div>
+    <div class="box green">Box 3</div>
+    <p class="text clear-both">This paragraph comes BELOW the floated boxes because we used clear: both.</p>
+</div>
+
+</body>
+</html>
